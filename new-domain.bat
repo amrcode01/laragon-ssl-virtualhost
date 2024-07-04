@@ -4,6 +4,8 @@ setlocal enabledelayedexpansion
 :: File yang digunakan sebagai template
 set "template_file=C:\laragon\etc\ssl\auto.openssl.conf"
 set "output_file=new_config.txt"
+:: Ganti Dengan auto.openssl.conf untuk otomatis mengganti config,lalu jalankan make-cart.bat pada folder create
+:: Pindahkan Ke Laragon/ssl lalu install ulang certificate nya
 
 :: Memeriksa apakah file template ada
 if not exist "%template_file%" (
